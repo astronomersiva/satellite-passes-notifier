@@ -17,8 +17,8 @@ Use the terminal to execute these commands.
   1. Terminal -> crontab -e
   2. Navigate to the bottom of the screen just after the lines that start with # sign.
   3. Enter the following lines.
-     * `0 * * * * env DISPLAY=:0 /usr/bin/python /home/userName/cronIridium.py`
-     *`@reboot /usr/bin/python /home/userName/iridiumFetcher.py &`
+     1. `0 * * * * env DISPLAY=:0 /usr/bin/python /home/userName/cronIridium.py`
+     2. `@reboot /usr/bin/python /home/userName/iridiumFetcher.py &`
   4. Ctrl + O write these lines to the Cron table.
   5. Ctrl + X to close the Crontab.
 
