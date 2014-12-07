@@ -18,7 +18,7 @@ Pop up notifications for Ubuntu if there is an ISS pass or Iridium flare in the 
   3. `@reboot /usr/bin/python /home/userName/iridiumFetcher.py &`
 
 This is how the notification for Iridium flares look like.
-![ScreenShot](https://raw.github.com/astronomersiva/satellite-passes-notifier/blob/master/iridiumPass.png)
+![ScreenShot](https://raw.github.com/astronomersiva/satellite-passes-notifier/master/iridiumPass.png)
 
 
 
