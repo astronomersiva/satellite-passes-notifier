@@ -51,8 +51,13 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 br.open(lURL)
 br.select_form(nr=0)    # the login form is the first on the page
+<<<<<<< HEAD
 br['ctl00$cph1$Login1$UserName'] = 'astronomersiva'
 br['ctl00$cph1$Login1$Password'] = 'fUTR5dru'
+=======
+br['ctl00$cph1$Login1$UserName'] = 'username'
+br['ctl00$cph1$Login1$Password'] = 'password'
+>>>>>>> e64b32379b4c2f5f9a3cd756a6c462aea6fd6afb
 resp = br.submit()
 
 
