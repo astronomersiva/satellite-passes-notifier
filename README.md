@@ -12,7 +12,7 @@ Use the terminal to execute these commands.
 
 ####Setup
 
-1. Specify your [heavens-above.com](http://www.heavens-above.com) credentials in the iridiumFetcher.py file.
+1. Specify your [heavens-above.com](http://www.heavens-above.com) credentials in the iridiumFetch.py file.
 2. Add the two Python scripts to Crontab using the following steps:
   1. Terminal -> crontab -e
   2. Navigate to the bottom of the screen just after the lines that start with # sign.
