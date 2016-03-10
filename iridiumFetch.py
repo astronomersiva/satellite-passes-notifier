@@ -1,3 +1,4 @@
+#This Python file uses the following encoding: utf-8
 import mechanize
 from time import strftime
 from bs4 import *
