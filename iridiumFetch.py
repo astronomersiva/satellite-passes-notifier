@@ -1,7 +1,9 @@
-#This Python file uses the following encoding: utf-8
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 import mechanize
 from time import strftime
-from bs4 import *
+from BeautifulSoup import BeautifulSoup
 from datetime import datetime, date, timedelta
 from time import strptime
 from getopt import getopt
@@ -66,7 +68,7 @@ iHtml = br.open(iURL).read()
 # it in a well-formed HTML skeleton. If there is no table of flare data, create
 # an empty table.
 try:
-  table = iHtml.split(r'<table class="standardTable" cellspacing="0" cellpadding="4" rules="cols">')[1]
+  table = iHtml.split(r'<table class="standardTable"')[1]
   table = table.split(r'</table>')[0]
 except IndexError:
   table = '<tr><td></td></tr>'
@@ -92,8 +94,6 @@ rows = soup.findAll('table')[0].findAll('tr')[1:]
 with open('IridiumNotifier.txt', 'w') as file:
     for row in rows:
         (start, intensity, loc) = parseRow(row)
-        passDate, passHour, passMin, passMag, where2See = start.strftime('%d'), start.strftime('%H'), start.strftime('%M'), str(intensity), loc
-        #print passDate, passHour, passMin, passMag, where2See
+        passDate, passHour, passMin, passMag, where2See = start.strftime('%d'), start.strftime('%H'), start.strftime('%M'), str(intensity), loc.encode('utf-8')
         details = [passDate, passHour, passMin, passMag, where2See]
-        print details
-        file.writelines(('|').join(details) + '\n')
+        file.write(('|').join(details) + '\n')
