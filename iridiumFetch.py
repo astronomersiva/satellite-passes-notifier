@@ -8,7 +8,7 @@ from datetime import datetime, date, timedelta
 from time import strptime
 from getopt import getopt
 import os, sys
-import pynotify
+#import pynotify
 
 # Since Heavens Above stopped including the year in the flare
 # dates, we have to figure it out ourselves. Easy enough most

@@ -9,6 +9,7 @@ Pop up notifications for Ubuntu if there is an ISS pass or Iridium flare in the 
 
 Use the terminal to execute these commands.
 * **PyNotify** Use `sudo pip install pynotify`
+* **pync** Use `sudo pip install pync`
 * **Mechanize** Use `sudo pip install mechanize`
 * **Beautiful Soup** Use `sudo pip install beautifulsoup`
 
